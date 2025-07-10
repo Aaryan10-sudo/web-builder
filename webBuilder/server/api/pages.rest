@@ -1,0 +1,13 @@
+POST http://localhost:9000/pages/create
+Content-Type: application/json
+
+{
+  "title": "Navbar",
+  "slug": "navbar",
+  "category": "layout",
+  "html_preview": "<nav class='bg-white'>CMS Navbar</nav>",
+  "css_preview": "",
+  "components": [{ "type": "text", "content": "CMS Navbar" }],
+  "styles": [{ "selectors": [], "style": { "color": "red" } }]
+}
+

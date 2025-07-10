@@ -1,0 +1,21 @@
+POST http://localhost:9000/blocks/create
+Content-Type: application/json
+
+{
+  "title": "Blog Section",
+  "category": "Blog",
+  "label": "Blog",
+  "content": "<section class=\\\"bg-gradient-to-r from-purple-800 to-blue-800 text-white py-20 px-6\\\"><div class=\\\"max-w-5xl mx-auto\\\"><h2 class=\\\"text-4xl font-bold mb-10 text-center\\\">Latest Articles & Insights</h2><div class=\\\"grid gap-10 sm:grid-cols-2 lg:grid-cols-3\\\"><article class=\\\"bg-purple-900 bg-opacity-70 rounded-lg p-6 shadow-lg hover:shadow-xl transition\\\"><h3 class=\\\"text-2xl font-semibold mb-3 hover:text-purple-400 cursor-pointer\\\">How to Build Responsive Websites in 2025</h3><p class=\\\"mb-4 text-gray-300\\\">Master the latest responsive design techniques with our comprehensive guide for modern web developers.</p><button class=\\\"text-purple-400 font-semibold hover:text-purple-600 underline cursor-pointer\\\">Read More →</button></article><article class=\\\"bg-purple-900 bg-opacity-70 rounded-lg p-6 shadow-lg hover:shadow-xl transition\\\"><h3 class=\\\"text-2xl font-semibold mb-3 hover:text-purple-400 cursor-pointer\\\">Top 10 Tailwind CSS Tips & Tricks</h3><p class=\\\"mb-4 text-gray-300\\\">Boost your productivity and design skills by mastering these essential Tailwind CSS features.</p><button class=\\\"text-purple-400 font-semibold hover:text-purple-600 underline cursor-pointer\\\">Read More →</button></article><article class=\\\"bg-purple-900 bg-opacity-70 rounded-lg p-6 shadow-lg hover:shadow-xl transition\\\"><h3 class=\\\"text-2xl font-semibold mb-3 hover:text-purple-400 cursor-pointer\\\">Why Dark Mode is Here to Stay</h3><p class=\\\"mb-4 text-gray-300\\\">Explore the benefits and best practices of dark mode design for better user experience.</p><button class=\\\"text-purple-400 font-semibold hover:text-purple-600 underline cursor-pointer\\\">Read More →</button></article></div></div></section>"
+}
+
+###
+
+POST http://localhost:9000/blocks/create
+Content-Type: application/json
+
+{
+  "title": "Hero Section",
+  "category": "Heros",
+  "label": "Hero",
+  "content": "<section class=\\\"bg-black text-white\\\"><div class=\\\"container mx-auto flex flex-col items-center px-4 py-16 text-center md:py-32 md:px-10 lg:px-32 xl:max-w-3xl\\\"><h1 class=\\\"text-4xl font-bold leading-none sm:text-5xl\\\">Build Your<span class=\\\"text-gray-400\\\"> Modern Website</span> Instantly</h1><p class=\\\"px-8 mt-8 mb-12 text-lg\\\">Create, customize, and launch your stunning website with our intuitive drag-and-drop builder. No coding required!</p><div class=\\\"flex flex-wrap justify-center\\\"><button class=\\\"px-8 py-3 m-2 text-lg font-semibold rounded bg-white text-black hover:bg-gray-200 transition-colors\\\">Get Started</button><button class=\\\"px-8 py-3 m-2 text-lg border rounded text-white border-white hover:bg-gray-900 transition-colors\\\">Learn More</button></div></div></section>"
+}
