@@ -1,0 +1,116 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    title Character Certificate
+    style.
+      body {
+        font-family: Arial, sans-serif;
+        border: 5px solid #007bff;
+        padding: 40px;
+        width: 800px;
+        margin: auto;
+        position: relative;
+      }
+      .header {
+        text-align: center;
+        position: relative;
+      }
+      .logo-left, .logo-right {
+        position: absolute;
+        top: 0;
+        width: 90px;
+      }
+      .logo-left {
+        left: 0;
+      }
+      .logo-right {
+        right: 0;
+      }
+      .header h2 {
+        margin: 0;
+        color: #007bff;
+        font-size: 20px;
+      }
+      .header h3 {
+        margin: 10px 0;
+        color: red;
+        font-weight: bold;
+        font-size: 22px;
+      }
+      .row {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 30px 0 10px;
+        font-size: 16px;
+      }
+      .row div {
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px;
+      }
+      .row span {
+        font-weight: bold;
+      }
+      .content {
+        line-height: 1.8;
+        font-size: 16px;
+        margin-top: 30px;
+      }
+      .content span {
+        font-weight: bold;
+        text-decoration: underline;
+        
+      }
+      .footer {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+        font-size: 14px;
+      }
+      .footer div {
+        text-align: center;
+      }
+      .issued-date {
+        margin-top: 30px;
+        font-size: 14px;
+      }
+  body
+    .header
+      img.logo-left(src="https://emis.shahidadarshcampus.edu.np/logo.svg")
+      h2 TRIBHUVAN UNIVERSITY
+        br
+        | SHAHID ADARSH CAMPUS
+        br
+        | MOLUNG, NEPAL
+      h3 CHARACTER CERTIFICATE
+
+    .row
+      div Ref.No :- #[span 200000]
+      div Campus Roll No. :- #[span 200000]
+      div T.U.Redg.No. :- #[span 200000]
+
+
+    .content
+      |This is to certify that Mr/Ms. #[span SUBASH SHRESTHA]  Son/Daughter of Shree #[span SUBASH SHRESTHA] a student of this campus has successfully completed the proficiency Certificate / Bachelor Level of #[span BED] with #[span FIRST] Division in the year #[span 2082/11/12] and has secured  #[span('A+/45%')] Percentage/GPA of Marks. I know nothing against his/her moral character. His/Her date of birth according to the campus record is #[span 2082/11/12 (B.S.), 2082/11/12 (A.D.)]
+      br
+      br
+      | I wish his/her success in every walk of life.
+
+    .footer
+      div
+        | __________________
+        br
+        | Prepared by
+      div
+        | __________________
+        br
+        | Verified by
+      div
+        | __________________
+        br
+        | Campus Chief
+
+    .issued-date
+      | Issued Date: #[span 2082/11/12]

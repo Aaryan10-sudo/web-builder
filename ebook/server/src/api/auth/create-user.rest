@@ -1,0 +1,8 @@
+POST http://localhost:3001/api/user/create
+Content-Type: application/json
+
+{
+    "fullName":"Aaryan Sharma",
+    "email":"lazyfox916@gmail.com",
+    "password":"Aaryan&10"
+}
