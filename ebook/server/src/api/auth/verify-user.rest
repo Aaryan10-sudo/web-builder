@@ -1,6 +1,0 @@
-POST http://localhost:3000/api/user/verify?id=374f6c1d-f01c-46fa-bbbb-7e02e37d6d37
-Content-Type: application/json
-
-{
-    "OTP":"070666"
-}
