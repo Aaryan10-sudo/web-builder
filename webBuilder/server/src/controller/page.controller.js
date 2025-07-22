@@ -1,4 +1,5 @@
-const { default: Page } = require("../model/pages.model");
+const Content = require("../model/content.model");
+const { Page } = require("../model/pages.model");
 
 exports.createPage = async (req, res, next) => {
   const {

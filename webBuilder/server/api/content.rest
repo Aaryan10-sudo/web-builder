@@ -1,0 +1,18 @@
+POST http://localhost:9000/contents/create
+Content-Type: application/json
+
+{
+  "title": "My Content",
+  "contents": [
+    {
+      "type": "h1",
+      "className": "text-red-500 font-bold",
+      "text": "Hello World"
+    },
+    {
+      "type": "p",
+      "className": "text-gray-700",
+      "text": "This is a paragraph."
+    }
+  ]
+}

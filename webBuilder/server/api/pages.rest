@@ -2,12 +2,23 @@ POST http://localhost:9000/pages/create
 Content-Type: application/json
 
 {
-  "title": "Navbar",
-  "slug": "navbar",
-  "category": "layout",
-  "html_preview": "<nav class='bg-white'>CMS Navbar</nav>",
+  "title": "Sample Page",
+  "slug": "sample-page",
+  "category": "demo",
+  "html_preview": "<section class='bg-blue-500 text-white p-4'>Hello, World!</section>",
   "css_preview": "",
-  "components": [{ "type": "text", "content": "CMS Navbar" }],
-  "styles": [{ "selectors": [], "style": { "color": "red" } }]
+  "components": [
+    {
+      "type": "section",
+      "content": "Hello, World!"
+    }
+  ],
+  "styles": [
+    {
+      "selectors": [".bg-blue-500"],
+      "style": {
+        "backgroundColor": "#3b82f6"
+      }
+    }
+  ]
 }
-

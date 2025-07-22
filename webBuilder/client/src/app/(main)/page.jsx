@@ -1,6 +1,4 @@
-import Hero from "@/components/Hero";
-import Navbar from "@/layout/Navbar";
-import React from "react";
+import Hero from "../../components/Hero";
 
 const page = () => {
   return (

@@ -1,4 +1,4 @@
-import GrapesEditor from "@/components/GrapesEditor";
+import GrapesEditor from "../../../components/GrapesEditor";
 import React from "react";
 
 const page = () => {

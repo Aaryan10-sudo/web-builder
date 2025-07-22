@@ -1,5 +1,5 @@
-import { DataTypes, Model } from "sequelize";
-import { postgres } from "../../config/db/connectPostgres.js";
+const { DataTypes, Model } = require("sequelize");
+const { postgres } = require("../../config/db/connectPostgres.js");
 
 class Page extends Model {}
 
@@ -17,11 +17,14 @@ Page.init(
     css_preview: DataTypes.TEXT,
     components: DataTypes.JSONB,
     styles: DataTypes.JSONB,
+    tailwind_classes: DataTypes.JSONB,
   },
   {
     sequelize: postgres,
-    tableName: "pages",
+    tableName: "Pages",
+    modelName: "Page",
     timestamps: true,
   }
 );
-export default Page;
+
+module.exports = { Page };
