@@ -4,7 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Override the editor background */
 #gjs {
   background-color: #010177; /* Dark purple */
   color: #eee;
