@@ -13,6 +13,9 @@ var usersRouter = require("./routes/users");
 var blocksRouter = require("./routes/blocks.routes");
 var pagesRouter = require("./routes/pages.routes");
 var contentsRouter = require("./routes/content.routes");
+var fileRouter = require("./routes/file.routes");
+var assetsRouter = require("./routes/assets.route");
+var templateRouter = require("./routes/template.route");
 
 var app = express();
 
@@ -32,6 +35,9 @@ app.use("/users", usersRouter);
 app.use("/blocks", blocksRouter);
 app.use("/pages", pagesRouter);
 app.use("/contents", contentsRouter);
+app.use("/api/upload", fileRouter);
+app.use("/assets", assetsRouter);
+app.use("/template", templateRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

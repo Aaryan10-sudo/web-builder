@@ -1,5 +1,5 @@
 const { DataTypes, Model } = require("sequelize");
-const { postgres } = require("../../config/db/connectPostgres.js");
+const { postgres } = require("../config/db/connectPostgres.js");
 
 class Page extends Model {}
 

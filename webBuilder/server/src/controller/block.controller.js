@@ -1,8 +1,8 @@
-const Blocks = require("../model/blocks.model");
-const Content = require("../model/content.model");
 const { JSDOM } = require("jsdom");
-
 const { DOMParser } = require("xmldom");
+const Blocks = require("../../models/blocks.model");
+const Content = require("../../models/content.model");
+
 
 function htmlToJson(node) {
   // If it's a text node

@@ -1,14 +1,18 @@
 const { Model, DataTypes } = require("sequelize");
-const { postgres } = require("../../config/db/connectPostgres");
+const { postgres } = require("../config/db/connectPostgres");
 
-class Blocks extends Model {}
+class Template extends Model {}
 
-Blocks.init(
+Template.init(
   {
     id: {
       type: DataTypes.UUID,
       defaultValue: DataTypes.UUIDV4,
       primaryKey: true,
+    },
+    preview: {
+      type: DataTypes.TEXT,
+      allowNull: false,
     },
     title: {
       type: DataTypes.STRING,
@@ -19,20 +23,14 @@ Blocks.init(
       allowNull: false,
     },
     content: {
-      type: DataTypes.TEXT,
+      type: DataTypes.JSON,
       allowNull: false,
-    },
-    label: {
-      type: DataTypes.STRING,
-      allowNull: true,
     },
   },
   {
     sequelize: postgres,
-    modelName: "Blocks",
-    tableName: "blocks",
-    timestamps: false,
+    timestamps: true,
   }
 );
 
-module.exports = Blocks;
+module.exports = Template;

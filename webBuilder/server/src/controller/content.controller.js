@@ -1,4 +1,4 @@
-const Content = require("../model/content.model");
+const Content = require("../../models/content.model");
 const { JSDOM } = require("jsdom");
 
 function extractTagClasses(html) {

@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require("sequelize");
-const { postgres } = require("../../config/db/connectPostgres");
+const { postgres } = require("../config/db/connectPostgres");
 const Block = require("./blocks.model");
 
 class Content extends Model {}
@@ -32,7 +32,7 @@ Content.init(
       allowNull: false,
     },
 
-    contentCss: {
+    content_css: {
       type: DataTypes.JSONB,
       allowNull: true,
     },

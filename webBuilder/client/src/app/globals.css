@@ -1,1 +1,33 @@
 @import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Override the editor background */
+#gjs {
+  background-color: #010177; /* Dark purple */
+  color: #eee;
+}
+
+/* Style the top panel */
+#gjs .gjs-pn-panel {
+  background-color: #444444; /* Deeper purple */
+  color: #fff;
+}
+
+/* Style the right panel (Blocks, Layers, etc.) */
+#gjs .gjs-pn-views-container {
+  background-color: #444444;
+}
+
+/* Save button (top right) */
+#gjs .gjs-btn-prim {
+  background-color: #1908b8;
+  color: white;
+}
+
+/* Block categories */
+.gjs-block-category {
+  color: #fff;
+}
