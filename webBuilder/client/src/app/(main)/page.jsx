@@ -4,6 +4,7 @@ import axios from "axios";
 import baseURL from "../../config/config";
 
 function Page() {
+  // let pageHtml = "";
   let [pageHtml, setPageHtml] = useState("");
   const [error, setError] = useState(null);
   useEffect(() => {
