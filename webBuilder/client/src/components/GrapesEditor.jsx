@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import grapesjs from "grapesjs";
 import "grapesjs/dist/css/grapes.min.css";
 import axios from "axios";
+import baseURL from "../config/config";
 
 const customBlockStyles = `
   .gjs-block {
@@ -37,9 +38,9 @@ export default function GrapesEditor() {
     async function getAllData() {
       try {
         const [templateResult, blockResult, assetsResult] = await Promise.all([
-          axios.get("http://localhost:9000/template/get"),
-          axios.get("http://localhost:9000/blocks/get"),
-          axios.get("http://localhost:9000/assets/get"),
+          axios.get(`${baseURL}/template/get`),
+          axios.get(`${baseURL}/blocks/get`),
+          axios.get(`${baseURL}/assets/get`),
         ]);
 
         if (templateResult.data?.data) setTemplates(templateResult.data.data);
@@ -69,7 +70,7 @@ export default function GrapesEditor() {
           if (!files.length) return Promise.resolve([]);
           const formData = new FormData();
           formData.append("file", files[0]);
-          return fetch("http://localhost:9000/api/upload", {
+          return fetch(`${baseURL}/api/upload`, {
             method: "POST",
             body: formData,
           })
@@ -187,9 +188,7 @@ export default function GrapesEditor() {
       try {
         // Using the route from the attribute for dynamic loading
         const result = await axios.get(
-          `http://localhost:9000/template/get-by-route?route=${encodeURIComponent(
-            route
-          )}`
+          `${baseURL}/template/get-by-route?route=${encodeURIComponent(route)}`
         );
         console.log("Server response payload:", result.data); // Good for debugging!
 
@@ -243,7 +242,7 @@ export default function GrapesEditor() {
 
     const html = editor.getHtml({ cleanId: true });
     try {
-      await axios.put("http://localhost:9000/template/update?route=/", {
+      await axios.put(`${baseURL}/template/update?route=/`, {
         route: "/",
         html,
       });
